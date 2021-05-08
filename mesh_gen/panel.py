@@ -16,5 +16,11 @@ class MESH_GEN_PT_PANEL(Panel):
         col = layout.column()
         col.operator(
             "object.do_action",
-            text='Do this'
-        ).action = 'apply'
+            text='Add array modifier'
+        ).action = 'add_modifier'
+
+        col = layout.column()
+        col.operator(
+            "object.do_action",
+            text='Create curve'
+        ).action = 'create_curve'
